@@ -4,8 +4,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/main/java/feature",
+        features = "features",
         glue = {"stepdefinition"}
 )
-public class runner {
+public class CucumberRunnerTest {
 }
