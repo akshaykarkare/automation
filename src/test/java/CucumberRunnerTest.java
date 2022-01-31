@@ -5,7 +5,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "features",
-        glue = {"stepdefinition"}
+        glue = {"stepdefinition"},
+        tags = "@zoho"
 )
 public class CucumberRunnerTest {
 }
+
