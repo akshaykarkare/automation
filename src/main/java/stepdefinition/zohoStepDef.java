@@ -11,7 +11,9 @@ public class zohoStepDef {
         System.out.println("user wants to navigate to URL : "+URL);
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.navigate().to(URL);
+        driver.quit();
     }
 }
 
