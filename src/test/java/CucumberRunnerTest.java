@@ -1,4 +1,3 @@
-import com.cucumber.listener.Reporter;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
@@ -11,15 +10,10 @@ import java.io.File;
         features = "features",
         glue = {"stepdefinition"},
         tags = "@zoho",
-        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
+        plugin = {"html:target/cucumber-reports/htmlReports.html","json:target/cucumber-reports/cucumber.json"},
         monochrome = true
 )
 public class CucumberRunnerTest {
-    @AfterClass
-    public static void writeExtentReport() {
-        Reporter.loadXMLConfig(new File("extent-config.xml"));
-    }
-
 }
 
 
