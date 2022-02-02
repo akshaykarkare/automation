@@ -15,13 +15,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
-                </configuration>
-            </plugin>
             <!-- Cucumber JVM Reporting plugin-->
             <plugin>
                 <groupId>net.masterthought</groupId>
