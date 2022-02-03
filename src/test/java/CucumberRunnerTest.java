@@ -9,7 +9,7 @@ import java.io.File;
 @CucumberOptions(
         features = "features",
         glue = {"stepdefinition"},
-        tags = "@zoho",
+        tags = "@test",
         plugin = {"html:target/cucumber-reports/htmlReports.html","json:target/cucumber-reports/cucumber.json","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         monochrome = true
 )
