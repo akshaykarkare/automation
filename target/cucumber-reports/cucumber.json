@@ -1,0 +1,47 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-03T07:54:46.259Z",
+        "line": 7,
+        "name": "Navigate to Zoho Website on Chrome Browser",
+        "description": "",
+        "id": "as-a-user;navigate-to-zoho-website-on-chrome-browser",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8159860000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Open \"https://zoho.com\" URL",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://zoho.com",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinition.zohoStepDef.openURL(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@zoho"
+          }
+        ]
+      }
+    ],
+    "name": "As a User",
+    "description": "         I Want to navigate to Zoho Website on Chrome Browser\n         and Sing up for free\n         then login",
+    "id": "as-a-user",
+    "keyword": "Feature",
+    "uri": "file:features/zoho.feature",
+    "tags": []
+  }
+]
