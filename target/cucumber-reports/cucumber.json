@@ -3,45 +3,51 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-03T08:00:53.629Z",
-        "line": 4,
-        "name": "test TC001",
+        "start_timestamp": "2022-02-04T18:35:37.999Z",
+        "line": 7,
+        "name": "Navigate to Zoho Website on Chrome Browser",
         "description": "",
-        "id": "test-configuration;test-tc001",
+        "id": "as-a-user;navigate-to-zoho-website-on-chrome-browser",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3229927000,
+              "duration": 11490720000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Print \"testing the cucumber configuration\" statement",
+            "line": 8,
+            "name": "Open Zoho Website",
             "match": {
-              "arguments": [
-                {
-                  "val": "testing the cucumber configuration",
-                  "offset": 7
-                }
-              ],
-              "location": "stepdefinition.testStepDef.printStatement(java.lang.String)"
+              "location": "stepdefinition.HomeSD.openURL()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1959106000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click",
+            "match": {
+              "location": "stepdefinition.HomeSD.click()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@test"
+            "name": "@zoho"
           }
         ]
       }
     ],
-    "name": "test configuration",
-    "description": "",
-    "id": "test-configuration",
+    "name": "As a User",
+    "description": "         I Want to navigate to Zoho Website on Chrome Browser\n         and Sing up for free\n         then login",
+    "id": "as-a-user",
     "keyword": "Feature",
-    "uri": "file:features/test.feature",
+    "uri": "file:features/zoho.feature",
     "tags": []
   }
 ]

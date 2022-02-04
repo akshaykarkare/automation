@@ -1,6 +1,5 @@
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
 import java.io.File;
@@ -9,7 +8,7 @@ import java.io.File;
 @CucumberOptions(
         features = "features",
         glue = {"stepdefinition"},
-        tags = "@test",
+        tags = "@zoho",
         plugin = {"html:target/cucumber-reports/htmlReports.html","json:target/cucumber-reports/cucumber.json","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         monochrome = true
 )
