@@ -11,7 +11,6 @@ import java.io.IOException;
 
 public class HomeSD {
     WebDriver driver;
-    WebDriverManager webDriverManager;
     PropertiesUtil properties;
     private TestContext testContext;
 
