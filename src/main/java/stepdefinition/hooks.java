@@ -4,6 +4,7 @@ import context.PropertiesUtil;
 import context.TestContext;
 import context.WebDriverManager;
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -32,6 +33,7 @@ public class hooks {
 
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
 
+
         //Move image file to new destination
         System.out.println(System.getProperty("user.dir"));
         String path = System.getProperty("user.dir")+"/screenshots/"+scenario.getName()+".png";
@@ -39,6 +41,9 @@ public class hooks {
 
         //Copy file at destination
         FileUtils.copyFile(SrcFile, DestFile);
+        scenario.attach(scrShot.getScreenshotAs(OutputType.BYTES),"image/png",scenario.getName());
+        scenario.log("logging using scenario");
+        driver.quit();
 
 
     }
