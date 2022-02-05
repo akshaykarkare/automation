@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-03T07:54:46.259Z",
+        "start_timestamp": "2022-02-04T18:35:37.999Z",
         "line": 7,
         "name": "Navigate to Zoho Website on Chrome Browser",
         "description": "",
@@ -13,21 +13,27 @@
         "steps": [
           {
             "result": {
-              "duration": 8159860000,
+              "duration": 11490720000,
               "status": "passed"
             },
             "line": 8,
-            "name": "Open \"https://zoho.com\" URL",
+            "name": "Open Zoho Website",
             "match": {
-              "arguments": [
-                {
-                  "val": "https://zoho.com",
-                  "offset": 6
-                }
-              ],
-              "location": "stepdefinition.zohoStepDef.openURL(java.lang.String)"
+              "location": "stepdefinition.HomeSD.openURL()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1959106000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click",
+            "match": {
+              "location": "stepdefinition.HomeSD.click()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [

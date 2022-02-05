@@ -5,4 +5,5 @@ Feature: As a User
 
   @zoho
   Scenario: Navigate to Zoho Website on Chrome Browser
-    Given Open "https://zoho.com" URL
+    Given Open Zoho Website
+    Then Click
