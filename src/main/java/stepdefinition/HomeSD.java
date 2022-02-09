@@ -3,16 +3,20 @@ package stepdefinition;
 import context.PropertiesUtil;
 import context.TestContext;
 import context.WebDriverManager;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.plugin.event.HookTestStep;
+import io.cucumber.plugin.event.HookType;
 import org.openqa.selenium.*;
 
 import java.io.IOException;
+import java.util.UUID;
 
 public class HomeSD {
     WebDriver driver;
-    WebDriverManager webDriverManager;
     PropertiesUtil properties;
+    Scenario scenario;
     private TestContext testContext;
 
     public HomeSD(TestContext context){

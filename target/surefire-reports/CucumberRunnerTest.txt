@@ -1,4 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: CucumberRunnerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.281 sec
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.905 s <<< FAILURE! - in CucumberRunnerTest
+test TC001(test configuration)  Time elapsed: 4.296 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "Print "testing the cucumber configuration" statement" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Print {string} statement")
+public void print_statement(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

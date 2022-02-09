@@ -1,4 +1,5 @@
 context/WebDriverManager.class
+stepdefinition/hooks.class
 stepdefinition/HomeSD.class
 pages/HomePage.class
 context/TestContext.class
