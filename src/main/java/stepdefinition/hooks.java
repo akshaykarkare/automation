@@ -6,6 +6,7 @@ import context.WebDriverManager;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
+import io.cucumber.java.en.Given;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -33,7 +34,6 @@ public class hooks {
 
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
 
-
         //Move image file to new destination
         System.out.println(System.getProperty("user.dir"));
         String path = System.getProperty("user.dir")+"/screenshots/"+scenario.getName()+".png";
@@ -44,7 +44,11 @@ public class hooks {
         scenario.attach(scrShot.getScreenshotAs(OutputType.BYTES),"image/png",scenario.getName());
         scenario.log("logging using scenario");
         driver.quit();
+    }
 
+    @Given("^Logging$")
+    public void logging(Scenario scenario) {
+        scenario.log("logging hardcoded vlavaluesus");
 
     }
 }

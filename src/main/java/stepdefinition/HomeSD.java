@@ -30,7 +30,6 @@ public class HomeSD {
     public void openURL() throws IOException {
         System.out.println("Navigating to Zoho Website ");
         driver.navigate().to(properties.readConfig("config","URL"));
-
     }
 
     @Then("^Click$")
