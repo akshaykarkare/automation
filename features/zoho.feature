@@ -5,5 +5,5 @@ Feature: As a User
 
   @zoho @demo
   Scenario: Navigate to Zoho Website on Chrome Browser
-    Given Open Zoho Website
-    Then Click
+    Given Open "zohoURL" Website
+    Then click on "Zoho_Home.signInLink"
