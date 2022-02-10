@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@test", ] ,
+        labels:  [ "@demo",  "@zoho", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 0.00, ] 
+                data:  [ 100.00,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 100.00, ] 
+                data:  [ 0.00,  0.00, ] 
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Automation</td>
         <td>1</td>
-      <td>09 Feb 2022, 12:42</td>
+      <td>10 Feb 2022, 12:11</td>
     </tr>
   </tbody>
 </table>
@@ -197,54 +197,71 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-tag_2210145489.html">@test</a></td>
+        <td class="tagname"><a href="report-tag_2209668642.html">@demo</a></td>
 
+        <td      class="passed"    >2</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td   class="undefined" >1</td>
+        <td class="total">2</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
         <td class="total">1</td>
 
+        <td class="duration" data-value="7421967000">7.421</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_2210333499.html">@zoho</a></td>
+
+        <td      class="passed"    >2</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="0">0.000</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="7421967000">7.421</td>
+        <td class="passed">Passed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
+      <td>4</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
-      <td>1</td>
+      <td>4</td>
 
+      <td>2</td>
       <td>0</td>
-      <td>1</td>
-      <td>1</td>
+      <td>2</td>
 
-      <td class="duration">0.000</td>
-      <td>1</td>
+      <td class="duration">14.843</td>
+      <td>2</td>
     </tr>
     <tr>
       <td></td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
       <td>100.00%</td>
-      <td></td>
       <td>0.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
       <td>100.00%</td>
-      <td></td>
-      <td></td>
       <td>0.00%</td>
+      <td></td>
+      <td></td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

@@ -6,8 +6,6 @@ import context.WebDriverManager;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.plugin.event.HookTestStep;
-import io.cucumber.plugin.event.HookType;
 import org.openqa.selenium.*;
 
 import java.io.IOException;
@@ -18,18 +16,23 @@ public class HomeSD {
     PropertiesUtil properties;
     Scenario scenario;
     private TestContext testContext;
+    hooks hooks;
 
     public HomeSD(TestContext context){
         System.out.println("zoho Step Def constructor");
         testContext=context;
         driver = testContext.getWebDriverManager().getDriver();
         properties = testContext.getProperty();
+        hooks= new hooks();
+
     }
 
     @Given("^Open Zoho Website$")
     public void openURL() throws IOException {
         System.out.println("Navigating to Zoho Website ");
         driver.navigate().to(properties.readConfig("config","URL"));
+        hooks.getScenario().log("trying to logg from HOME SD step def");
+        hooks.takeScreenshot(driver);
     }
 
     @Then("^Click$")

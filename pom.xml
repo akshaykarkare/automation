@@ -11,8 +11,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <featureDir>features</featureDir>
-        <tags>not @example</tags>
+
     </properties>
 
     <build>
@@ -33,7 +32,7 @@
                 <executions>
                     <execution>
                         <id>execution</id>
-                        <phase>test</phase>
+                        <phase>install</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>

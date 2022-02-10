@@ -3,7 +3,7 @@ Feature: As a User
          and Sing up for free
          then login
 
-  @zoho
+  @zoho @demo
   Scenario: Navigate to Zoho Website on Chrome Browser
     Given Open Zoho Website
     Then Click
