@@ -22,15 +22,5 @@ public class LoginSD {
         properties = testContext.getProperty();
         hooks= new hooks();
     }
-    @Given("^Print \"([^\"]*)\" statement$")
-    public void print(String printText) throws IOException {
-        System.out.println(printText);
-        hooks.getScenario().log("trying to logg from LOGIN SD step def");
-        hooks.takeScreenshot(driver);
-    }
 
-    @Given("^YML reader$")
-    public void ymlReader(){
-        System.out.println("yml reader :"+properties.readYml("Zoho_Home.signInLink"));
-    }
 }

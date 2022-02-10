@@ -17,9 +17,7 @@ public class commonSD extends context.commonMethods{
     public void openURL(String URL) throws IOException {
         System.out.println("Opening: "+URL);
         navigate(URL);
-         driver.navigate().to(properties.readConfig("config",URL));
-         hooks.getScenario().log("trying to logg from HOME SD step def");
-          hooks.takeScreenshot(driver);
+        driver.navigate().to(properties.readConfig("config",URL));
     }
 
     //ClickOnElement
@@ -27,8 +25,16 @@ public class commonSD extends context.commonMethods{
     public void clickOn(String element) throws IOException {
         System.out.println("clicking: "+ element);
         click(element);
-        //driver.findElement(By.xpath(properties.readConfig("homeXpath","signInLink"))).click();
-       // driver.findElement(By.xpath(properties.readYml("Zoho_Home.signInLink"))).click();
+    }
+    //print to report
+    @Given("^Print \"([^\"]*)\" statement$")
+    public void print(String printText) {
+        hooks.getScenario().log(printText);
+    }
 
+    //take screenshot
+    @Given("^capture screenshot$")
+    public void takeScreenshot() throws IOException {
+        hooks.takeScreenshot(driver);
     }
 }

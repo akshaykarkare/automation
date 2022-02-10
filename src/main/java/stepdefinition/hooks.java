@@ -59,7 +59,6 @@ public class hooks {
         //Copy file at destination
         FileUtils.copyFile(SrcFile, DestFile);
         scenario.attach(scrShot.getScreenshotAs(OutputType.BYTES),"image/png",scenario.getName());
-        scenario.log("logging using scenario");
     }
 
 }
