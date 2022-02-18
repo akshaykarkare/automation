@@ -1,6 +1,6 @@
 Feature: test configuration
 
-@test @demo
+@test
 Scenario: test TC001
 #Given Print "testing the cucumber configuration" statement
   Given Open "googleURL" Website
