@@ -1,7 +1,16 @@
 Feature: test configuration
 
-@ip
+@brain
 Scenario: IP TC001
-#Given Print "testing the cucumber configuration" statement
   Given Open "yatriURL" Website
-  Then interview preparation
+
+
+
+Rule: examples scenes
+@ip
+      Example: testing
+        Given do things
+          |car| santro|
+
+
+

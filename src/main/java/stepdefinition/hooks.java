@@ -27,7 +27,7 @@ public class hooks {
         driver = testContext.getWebDriverManager().getDriver();
     }
 
-    @Before
+    //@Before
     public void beforeHook(Scenario scenario) throws IOException {
         System.out.println("Before Scenario");
         this.scenario=scenario;
@@ -40,7 +40,7 @@ public class hooks {
     @After
     public void afterHook(Scenario scenario) throws IOException {
         System.out.println("After Scenario");
-        takeScreenshot(driver);
+        //takeScreenshot(driver);
         driver.quit();
     }
 
